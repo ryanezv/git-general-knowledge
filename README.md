@@ -116,46 +116,46 @@ http://www.mobilefish.com/developer/git/git.html
 `git config --global --unset http.proxy`
 
 
-###### git tag: nos permite agregar etiquetas a nuestros cambios
+###### tag: nos permite agregar etiquetas a nuestros cambios
 
-git tag 
+`git tag 
 -a para la anotación
 -m para el mensaje
 -l nos muestra la lista de etiquetas
 -f para renombrar
 -d para borrar
 
-###### git log: configurando el logger
+###### log: configurando el logger
 
-git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+`git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
-###### git reset
+###### reset
 
-git reset --soft [SHA 1]: 
+`git reset --soft [SHA 1]: 
 Elimina los cambios hasta el staging area
-git reset --mixed [SHA 1]: 
+`git reset --mixed [SHA 1]: 
 Elimina los cambios hasta el working area
-git reset --hard [SHA 1]: 
+`git reset --hard [SHA 1]: 
 Regresa hasta el commit del [SHA 1], si hay forma de recuperar si tenemos el SHA-1(commit)
 
-###### Git stash
+###### stash
 
-git stash: es otro de los limbos, como el staging area. Para agregar los cambios estos deben estar en el staging area.
-git stash list: nos muestra la lista de stash que tengamos.
-git stash drop stash@{numero}: nos permite borrar un stash.
-git stash apply: aplicamos el último cambio
+`git stash: es otro de los limbos, como el staging area. Para agregar los cambios estos deben estar en el staging area.
+`git stash list: nos muestra la lista de stash que tengamos.
+`git stash drop stash@{numero}: nos permite borrar un stash.
+`git stash apply: aplicamos el último cambio
 
-git remote add origin "http..."
-git remote remove origin
-git remote -v
+`git remote add origin "http..."
+`git remote remove origin
+`git remote -v
 
-$ git fetch origin master
+`$ git fetch origin master
 
-git pull origin master
+`git pull origin master
 
-###### es igual a los dos pasos anteriores git fecth y git merge
+###### es igual a los dos pasos anteriores fecth y merge
 
-git push origin master
-git push origin master --tags
-git push origin [otra_rama]
+`git push origin master
+`git push origin master --tags
+`git push origin [otra_rama]
 
